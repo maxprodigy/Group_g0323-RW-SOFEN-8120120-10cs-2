@@ -1,0 +1,6 @@
+#!/bin/bash
+output="one\ntwo\nthree\nfour\nfive"
+textfile=$(date +"%Y-%M-%D")-file.txt
+touch $textfile
+echo -e $output > $textfile
+echo -e $output
